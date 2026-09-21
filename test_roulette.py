@@ -101,6 +101,14 @@ def test_tweede_dozijn_verliest_bij_vijfentwintig():
     assert is_winnende_inzet("dozijn2", None, 25) is False
 
 
+def test_laag_wint_bij_achtien():
+    assert is_winnende_inzet("laag", None, 18) is True
+
+
+def test_laag_verliest_bij_negentien():
+    assert is_winnende_inzet("laag", None, 19) is False
+
+
 # ------------------------------------------------------------------
 # bereken_uitbetaling
 # ------------------------------------------------------------------
