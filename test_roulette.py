@@ -76,11 +76,11 @@ def test_vakje_37_bestaat_niet():
 # ------------------------------------------------------------------
 
 def test_rood_wint_bij_een_rood_nummer():
-    assert is_winnende_inzet("rood", None, 3) is True
+    assert is_winnende_inzet("rood", None, 2) is True
 
 
 def test_rood_verliest_bij_een_zwart_nummer():
-    assert is_winnende_inzet("rood", None, 2) is False
+    assert is_winnende_inzet("rood", None, 3) is False
 
 
 def test_alle_kansen_verliezen_bij_nul():
@@ -102,7 +102,7 @@ def test_tweede_dozijn_verliest_bij_vijfentwintig():
 
 
 def test_laag_wint_bij_achtien():
-    assert is_winnende_inzet("laag", None, 19) is True
+    assert is_winnende_inzet("laag", None, 18) is True
 
 
 def test_laag_verliest_bij_negentien():
